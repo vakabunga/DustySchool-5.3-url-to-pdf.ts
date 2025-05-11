@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>URL to PDF Service</title>
-</head>
-<body class="app">
-    <h1>URL to PDF Service</h1>
-    <label for="url">Paste url and get PDF file of this page</label>
-    <input type="text" id="url">
-    <script src="./keys.js"></script>
-    <script src="./index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>URL to PDF Service</title>
+    </head>
+    <body class="app">
+        <h1>URL to PDF Service</h1>
+        <form class="form" action="">
+            <label for="url">Paste url and get PDF file of this page. URL must start with HTTPS:// or HTTP://</label>
+            <br />
+            <input
+                class="form-input-url"
+                type="text"
+                id="url"
+                placeholder="eg. http://example.com or https://example.com"
+            />
+            <input class="form-button" type="submit" id="url" value="Get PDF" />
+            <div class="hidden error">please paste correct url</div>
+        </form>
+        <script src="./keys.js"></script>
+        <script src="./index.js"></script>
+    </body>
 </html>
